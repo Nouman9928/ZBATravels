@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Umrah Packages 2026 — Economy, 3 Star, 4 Star, 5 Star | Zarrar Bin Adnan Travel and Tours</title>
+<meta name="description" content="Umrah packages from Warburton & Nankana Sahib: 7, 14, 15, 20, 21 & 28 days — Economy, 3 Star, 4 Star and 5 Star. Visa, ticket, hotels near Haram, transport & ziaraat included. Get today's price on WhatsApp.">
+<link rel="canonical" href="https://www.zbatravels.com/packages.html">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="topbar"><div class="wrap"><div>🕋 Umrah Booking Open — <b>Limited Seats in Upcoming Groups</b></div><div data-config="officeHours"></div></div></div>
+<header class="site"><div class="wrap nav">
+  <a class="brand" href="index.html"><img src="assets/logo.jpg" alt="Zarrar Bin Adnan logo"><span>Zarrar Bin Adnan<small>Travel and Tours Ltd.</small></span></a>
+  <nav class="menu"><a href="index.html">Home</a><a href="packages.html">Umrah Packages</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></nav>
+  <a class="btn btn-wa btn-sm" data-wa="Assalam-o-Alaikum, I want Umrah package details.">WhatsApp Us</a>
+</div></header>
+
+<section class="hero" style="padding:52px 0"><div class="wrap">
+  <span class="badge">ALL PACKAGES — 2026 SEASON</span>
+  <h1>Umrah Packages for <span>Every Budget & Every Family</span></h1>
+  <p>Choose your days and hotel level. Every package includes visa, return ticket, hotels, complete transport and ziaraat. Tap any package for today's exact price.</p>
+</div></section>
+
+<section><div class="wrap">
+  <div class="filters" id="filters">
+    <button class="active" data-filter="all">All Packages</button>
+    <button data-filter="economy">Economy</button>
+    <button data-filter="3star">3 Star</button>
+    <button data-filter="4star">4 Star</button>
+    <button data-filter="5star">5 Star</button>
+  </div>
+  <div class="grid grid-3" id="pkgGrid"></div>
+  <p class="sub" style="margin-top:30px">Need different dates, a family room, or travel from your own city? We build custom packages too.<br><br>
+  <a class="btn btn-wa" data-wa="Assalam-o-Alaikum, mujhe apni family ke liye custom Umrah package chahiye.">💬 Build My Custom Package</a></p>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="grid grid-3">
+    <div><h4>Zarrar Bin Adnan Travel and Tours Ltd.</h4><p>Complete Umrah services — Warburton, Nankana Sahib & Punjab.</p></div>
+    <div><h4>Quick Links</h4><p><a href="index.html">Home</a><br><a href="about.html">About Us</a><br><a href="contact.html">Contact</a><br><a href="umrah-packages-warburton.html">Umrah in Warburton</a><br><a href="umrah-packages-nankana-sahib.html">Umrah in Nankana Sahib</a></p></div>
+    <div><h4>Contact</h4><p>📍 <span data-config="officeAddress"></span><br>🕘 <span data-config="officeHours"></span></p></div>
+  </div>
+  <div class="copyright">© <span id="year"></span> Zarrar Bin Adnan Travel and Tours Ltd.</div>
+</div></footer>
+<a class="float-wa" data-wa="Assalam-o-Alaikum, I want Umrah package details." aria-label="WhatsApp">💬</a>
+<div class="mobilebar"><a class="pk" href="index.html">🏠 Home</a><a class="wa" data-wa="Assalam-o-Alaikum, mujhe Umrah package ki price chahiye.">💬 WhatsApp — Get Price</a></div>
+
+<script src="assets/config.js"></script>
+<script src="assets/motion.js"></script>
+<script>
+// Package catalogue — ONE place to edit prices/specs. Set "price" when the user approves public prices.
+const PACKAGES = [
+  {days:15, tier:"economy", tierLabel:"Economy", hotel:"Economy hotels + shuttle", sharing:"Quad Sharing", popular:false},
+  {days:21, tier:"economy", tierLabel:"Economy", hotel:"Economy hotels + shuttle", sharing:"Quad Sharing", popular:false},
+  {days:28, tier:"economy", tierLabel:"Economy", hotel:"Economy hotels + shuttle", sharing:"Quad Sharing", popular:false},
+  {days:14, tier:"3star", tierLabel:"3 Star", hotel:"3-star hotels, near Haram", sharing:"Quad / Triple Sharing", popular:false},
+  {days:20, tier:"3star", tierLabel:"3 Star", hotel:"3-star hotels, near Haram", sharing:"Family Sharing", popular:true},
+  {days:21, tier:"3star", tierLabel:"3 Star", hotel:"3-star hotels, near Haram", sharing:"Quad / Triple Sharing", popular:false},
+  {days:14, tier:"4star", tierLabel:"4 Star", hotel:"4-star hotels, walking distance", sharing:"Triple / Double Sharing", popular:false},
+  {days:20, tier:"4star", tierLabel:"4 Star", hotel:"4-star hotels, walking distance", sharing:"Triple / Double Sharing", popular:false},
+  {days:15, tier:"5star", tierLabel:"5 Star", hotel:"5-star hotels, Haram-facing", sharing:"Double Sharing", popular:false},
+  {days:21, tier:"5star", tierLabel:"5 Star", hotel:"5-star hotels, Haram-facing", sharing:"Double Sharing", popular:false},
+];
+function render(filter){
+  const grid = document.getElementById("pkgGrid"); grid.innerHTML = "";
+  PACKAGES.filter(p => filter==="all" || p.tier===filter).forEach(p => {
+    const name = p.days + " Days " + p.tierLabel + " Umrah Package";
+    const img = {economy:"assets/img/kaaba.jpg","3star":"assets/img/madinah.jpg","4star":"assets/img/nabawi-sunset.jpg","5star":"assets/img/nabawi-sunset.jpg"}[p.tier];
+    grid.innerHTML += `<div class="card pkg ${p.popular?'popular':''}">
+      ${p.popular?'<div class="popular-tag">MOST POPULAR</div>':''}
+      <img class="pkg-img" src="${img}" alt="${name}" loading="lazy">
+      <div class="pkg-head"><div class="tier">${p.tierLabel}</div><h3>${p.days} Days Umrah</h3><div>Makkah + Madinah • ${p.sharing}</div></div>
+      <div class="pkg-body"><ul>
+        <li>Umrah visa included</li><li>Return air ticket included</li><li>${p.hotel}</li>
+        <li>Complete transport</li><li>Complete ziaraat — Makkah & Madinah</li><li class="no">Food not included (unless stated)</li>
+      </ul><div class="price-note">💬 <b>Today's price:</b> tap below for the exact rate.</div></div>
+      <a class="btn btn-wa" target="_blank" rel="noopener" href="${waLink('Assalam-o-Alaikum, I am interested in: ' + name + '. Please send today\'s price.')}">Get Price on WhatsApp</a>
+    </div>`;
+  });
+}
+document.getElementById("filters").addEventListener("click", e => {
+  if(e.target.tagName!=="BUTTON") return;
+  document.querySelectorAll("#filters button").forEach(b=>b.classList.remove("active"));
+  e.target.classList.add("active"); render(e.target.dataset.filter);
+});
+render("all");
+</script>
+</body>
+</html>
