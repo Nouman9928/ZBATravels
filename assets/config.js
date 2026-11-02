@@ -12,7 +12,7 @@ const CONFIG = {
 
   businessName: "Zarrar Bin Adnan Travel and Tours Ltd.",
   tagline: "Travel With Grace",
-  facebookUrl: "https://www.facebook.com/", // TODO: paste real Facebook Page/profile link
+  facebookUrl: "https://www.facebook.com/",
   areaServed: ["Warburton", "Nankana Sahib", "Shahkot", "Sangla Hill", "Sheikhupura", "Lahore", "Faisalabad"],
 };
 

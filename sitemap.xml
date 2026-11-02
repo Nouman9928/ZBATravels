@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.zbatravels.com/</loc></url>
-  <url><loc>https://www.zbatravels.com/packages.html</loc></url>
-  <url><loc>https://www.zbatravels.com/about.html</loc></url>
-  <url><loc>https://www.zbatravels.com/contact.html</loc></url>
-  <url><loc>https://www.zbatravels.com/umrah-packages-warburton.html</loc></url>
-  <url><loc>https://www.zbatravels.com/umrah-packages-nankana-sahib.html</loc></url>
+  <url><loc>https://zbatravels.vercel.app/</loc></url>
+  <url><loc>https://zbatravels.vercel.app/packages.html</loc></url>
+  <url><loc>https://zbatravels.vercel.app/about.html</loc></url>
+  <url><loc>https://zbatravels.vercel.app/contact.html</loc></url>
+  <url><loc>https://zbatravels.vercel.app/umrah-packages-warburton.html</loc></url>
+  <url><loc>https://zbatravels.vercel.app/umrah-packages-nankana-sahib.html</loc></url>
 </urlset>
